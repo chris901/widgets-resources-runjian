@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="runjian.textareaweb.TextAreaWeb" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>SYY TextArea Web</name>
+    <description>My widget description</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <systemProperty key="Label" />
+            <property key="placeholder" type="string" required="false" defaultValue="请输入">
+                <caption>placeholder</caption>
+                <description>输入框提示文字</description>
+            </property>
+            <property key="allowClear" type="boolean" defaultValue="false">
+                <caption>allowClear</caption>
+                <description>图标名称</description>
+            </property>
+            <property key="bordered" type="boolean" defaultValue="true">
+                <caption>bordered</caption>
+                <description>是否有边框</description>
+            </property>
+            <property key="value" type="attribute">
+                <caption>value</caption>
+                <description>输入框内容</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Decimal" />
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+            <property key="maxLength" type="integer" defaultValue="100">
+                <caption>maxLength</caption>
+                <description>最大长度</description>
+            </property>
+            <property key="showCount" type="boolean" defaultValue="false">
+                <caption>showCount</caption>
+                <description>是否展示字数</description>
+            </property>
+            <property key="autoSize" type="boolean" defaultValue="false">
+                <caption>autoSize</caption>
+                <description>自适应内容高度，可设置为 true | false</description>
+            </property>
+            <property key="minRows" type="integer" defaultValue="2">
+                <caption>minRows</caption>
+                <description>最小高度,最少几行</description>
+            </property>
+            <property key="maxRows" type="integer" defaultValue="6">
+                <caption>maxRows</caption>
+                <description>最大高度，最多几行</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action">
+                <caption>On change</caption>
+                <description />
+            </property>
+            <property key="onResize" type="action">
+                <caption>onResize</caption>
+                <description />
+            </property>
+            <property key="onPressEnter" type="action">
+                <caption>onPressEnter</caption>
+                <description />
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
