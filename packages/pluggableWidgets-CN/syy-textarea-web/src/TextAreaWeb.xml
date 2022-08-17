@@ -6,21 +6,21 @@
     <properties>
         <propertyGroup caption="General">
             <systemProperty key="Label" />
-            <property key="placeholder" type="string" required="false" defaultValue="请输入">
+            <property key="placeholder" type="string" required="false" defaultValue="please enter">
                 <caption>placeholder</caption>
-                <description>输入框提示文字</description>
+                <description>Placeholder</description>
             </property>
             <property key="allowClear" type="boolean" defaultValue="false">
                 <caption>allowClear</caption>
-                <description>图标名称</description>
+                <description>If allow to remove input content with clear icon</description>
             </property>
             <property key="bordered" type="boolean" defaultValue="true">
                 <caption>bordered</caption>
-                <description>是否有边框</description>
+                <description>Whether has border style</description>
             </property>
             <property key="value" type="attribute">
                 <caption>value</caption>
-                <description>输入框内容</description>
+                <description>The input content value</description>
                 <attributeTypes>
                     <attributeType name="String" />
                     <attributeType name="Decimal" />
@@ -29,23 +29,23 @@
             </property>
             <property key="maxLength" type="integer" defaultValue="100">
                 <caption>maxLength</caption>
-                <description>最大长度</description>
+                <description>The max length</description>
             </property>
             <property key="showCount" type="boolean" defaultValue="false">
                 <caption>showCount</caption>
-                <description>是否展示字数</description>
+                <description>Whether show text count</description>
             </property>
             <property key="autoSize" type="boolean" defaultValue="false">
                 <caption>autoSize</caption>
-                <description>自适应内容高度，可设置为 true | false</description>
+                <description>Height autosize feature, can be set to true | false</description>
             </property>
             <property key="minRows" type="integer" defaultValue="2">
                 <caption>minRows</caption>
-                <description>最小高度,最少几行</description>
+                <description>Minimum height, at least a few lines</description>
             </property>
             <property key="maxRows" type="integer" defaultValue="6">
                 <caption>maxRows</caption>
-                <description>最大高度，最多几行</description>
+                <description>Maximum height, up to several lines</description>
             </property>
         </propertyGroup>
         <propertyGroup caption="Events">

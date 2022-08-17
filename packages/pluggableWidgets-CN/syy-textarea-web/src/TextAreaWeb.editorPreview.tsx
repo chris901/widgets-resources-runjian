@@ -1,34 +1,17 @@
 import { Component, ReactNode, createElement } from "react";
-import { Button } from "antd";
-import { ButtonWebPreviewProps } from "../typings/ButtonWebProps";
-
+import { Input } from "antd";
+import { TextAreaWebContainerProps } from "../typings/TextAreaWebProps";
+const { TextArea } = Input;
 declare function require(name: string): string;
 
-export class preview extends Component<ButtonWebPreviewProps> {
+export class preview extends Component<TextAreaWebContainerProps> {
     render(): ReactNode {
         const { props } = this;
-        const {
-            block,
-            href,
-            ghost,
-            // loading, danger, disabled, icon,
-            size,
-            shape,
-            type,
-            text
-        } = props;
-        const shapeData = shape === "circle" ? "circle" : shape === "round" ? "round" : undefined;
-        const textData = text.trim() === "" ? undefined : text;
-        return (
-            <div className={props.className}>
-                <Button ghost={ghost} block={block} href={href} size={size} shape={shapeData} type={type}>
-                    {textData}
-                </Button>
-            </div>
-        );
+        const { placeholder, bordered, allowClear } = props;
+        return <TextArea maxLength={300} allowClear={allowClear} bordered={bordered} placeholder={placeholder} />;
     }
 }
 
 export function getPreviewCss(): string {
-    return require("./ui/ButtonWeb.css");
+    return require("./ui/TextAreaWeb.scss");
 }

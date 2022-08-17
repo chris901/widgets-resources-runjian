@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextAreaWeb render value max than maxLength 1`] = `
+<textarea
+  class="ant-input"
+>
+  hello render hello
+</textarea>
+`;
+
+exports[`TextAreaWeb renders value 1`] = `
+<textarea
+  class="ant-input"
+>
+  hello render hello
+</textarea>
+`;
