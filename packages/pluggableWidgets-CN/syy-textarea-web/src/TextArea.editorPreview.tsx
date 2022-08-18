@@ -1,10 +1,10 @@
 import { Component, ReactNode, createElement } from "react";
 import { Input } from "antd";
-import { TextAreaWebContainerProps } from "../typings/TextAreaWebProps";
+import { TextAreaContainerProps } from "../typings/TextAreaProps";
 const { TextArea } = Input;
 declare function require(name: string): string;
 
-export class preview extends Component<TextAreaWebContainerProps> {
+export class preview extends Component<TextAreaContainerProps> {
     render(): ReactNode {
         const { props } = this;
         const { placeholder, bordered, allowClear } = props;

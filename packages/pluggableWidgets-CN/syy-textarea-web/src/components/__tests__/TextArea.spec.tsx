@@ -1,6 +1,6 @@
 import { createElement } from "react";
 import { render } from "enzyme";
-import { TextAreaComponent, TextAreaProps } from "../TextAreaWeb";
+import { TextAreaComponent, TextAreaProps } from "../TextArea";
 
 describe("TextAreaWeb", () => {
     let defaultTextAreaProps: TextAreaProps;

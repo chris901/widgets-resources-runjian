@@ -1,10 +1,10 @@
 import { ReactNode, createElement, useCallback } from "react";
-import { TextAreaWebContainerProps } from "../typings/TextAreaWebProps";
-import { TextAreaComponent } from "./components/TextAreaWeb";
+import { TextAreaContainerProps } from "../typings/TextAreaProps";
+import { TextAreaComponent } from "./components/TextArea";
 import { executeAction } from "@mendix/piw-utils-internal";
 import "./ui/TextAreaWeb.scss";
 
-export function TextAreaWeb(props: TextAreaWebContainerProps): ReactNode {
+export function TextArea(props: TextAreaContainerProps): ReactNode {
     const { placeholder, showCount, autoSize, bordered, allowClear, maxLength, minRows, maxRows, value } = props;
 
     const onChange = useCallback(() => executeAction(props.onChange), [props.onChange]);

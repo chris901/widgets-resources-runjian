@@ -1,12 +1,12 @@
 /**
- * This file was generated from TextAreaWeb.xml
+ * This file was generated from TextArea.xml
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix UI Content Team
  */
 import { ActionValue, EditableValue } from "mendix";
 import { Big } from "big.js";
 
-export interface TextAreaWebContainerProps {
+export interface TextAreaContainerProps {
     name: string;
     tabIndex?: number;
     id: string;
@@ -24,7 +24,7 @@ export interface TextAreaWebContainerProps {
     onPressEnter?: ActionValue;
 }
 
-export interface TextAreaWebPreviewProps {
+export interface TextAreaPreviewProps {
     readOnly: boolean;
     placeholder: string;
     allowClear: boolean;

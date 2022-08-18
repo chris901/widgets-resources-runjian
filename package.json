@@ -102,5 +102,6 @@
     "react-native": {
       "use-subscription": "1.5.1"
     }
-  }
+  },
+  "dependencies": {}
 }
